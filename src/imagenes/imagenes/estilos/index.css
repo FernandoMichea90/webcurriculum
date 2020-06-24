@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
+
+:root
+{
+
+    --uno:#eb5848;
+    --dos:#FF2C19;
+    --tres:white;
+    --cuatro:#EDFF87;
+    --cinco:#2e2e2e;
+}
+.nav #menuicon{
+
+    color:var(--cinco);
+    cursor: pointer;
+}
+
+#menuicon
+{
+    color:var(--cinco);
+}
+nav{
+
+    color:var(--cinco)!important;
+    cursor: pointer;
+}
+.navDos .menuicon{
+
+    color:var(--tres);
+    cursor: pointer;
+}
+
+.btn
+{
+    background-color: var(--uno);
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 3rem;
+     padding: 0 52px;
+    height: 3rem;
+}
+
+
+.btn:hover
+{
+    background-color: var(--cinco);
+    font-weight: 400;
+letter-spacing: 0.012em;
+font-size: 24px;
+font-family: 'Raleway', sans-serif;
+line-height: 3rem;
+    padding: 0 52px;
+    height: 3rem;
+
+
+}
+
+.btn:focus
+{
+    background-color: var(--cinco);
+    font-weight: 400;
+letter-spacing: 0.012em;
+font-size: 24px;
+font-family: 'Raleway', sans-serif;
+line-height: 3rem;
+    padding: 0 52px;
+    height: 3rem;
+
+
+}
+
+html
+{
+    color:var(--cinco) ;
+    font-family: 'Raleway', sans-serif;
+
+}
+/*margen de los div */
+.margen
+{
+    margin-top: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+/* para la foto*/
+.circuloFoto
+{
+    border-radius: 16rem;
+    width: 50vw;
+    max-width: 350px;
+    margin: auto;
+
+    
+}
+
+
+
+/* margen texto  */
+
+.margenTexto
+{
+    margin-top: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-size: 1.6rem;
+}
+
+.divFoto
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.divFotodos
+{
+    
+   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* texto al cento  */
+
+.txtCentro
+{
+     text-align: center;
+    
+}
+.margenBottom
+
+{   margin-top: 0rem;
+     margin-bottom: 10rem;
+}
+
+.cajaHabilidades
+{
+
+    height: 16rem;
+}
+.cardDiv
+{
+    padding:2rem!important;
+}  
+/*
+.card
+{
+    height: 23em;
+}*/
+.rowContacto
+{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 20rem;
+}
+.botonDerecha
+{
+    float: right;
+}
+
+.parallax-container {
+    height: 831px;;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  }
+
+  .margendos
+  {
+
+    margin-top: 10rem;
+   
+    margin-right: 10rem;
+    
+   position: absolute;
+    top: 0;
+   
+
+  }
+  .btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
+    font-size: 2.0rem;
+    line-height: inherit;
+}
+  .navDos{
+   
+    background-color: var(--uno) ;
+    width: 100%;
+    height: 56px;
+    height: 6rem;
+    line-height: 64px;
+    padding: 1rem;
+  }
+  
+  nav{
+    background-color: #eb584800;
+    width: 100%;
+    height: 6rem;
+    line-height: 64px;
+    padding: 1rem;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+   }
+  .page-footer
+  {
+   background: var(--cinco);
+    
+  }
+  .btn-floating.btn-large i {
+    line-height: 56px;
+    background: #77e878;
+}
+h1
+{   
+    font-family: "Raleway";
+    font-weight: 900;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    line-height: 1em;
+    font-size: 6rem!important;
+}
+.navbar-fixed {
+    position: absolute;
+    height: 64px;
+    z-index: 997;
+}
+nav .brand-logo {
+    position: absolute;
+    color:var(--cinco);
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+   
+    color:var(--cinco);
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.navDos .brand-logo {
+    position: absolute;
+    color:var(--tres);
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+.navDos ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    color:var(--tres);
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.colorEspecial
+{
+    color:var(--uno)
+}
+
+
+@media only screen and (max-width: 993px) {
+    .divFoto {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        position: relative;
+        width: 100vw;
+    }
+    .margenTexto {
+        margin-top: 4rem;
+        font-weight: 400;
+        letter-spacing: 0.012em;
+        font-size: 1rem;
+    }
+
+    .btn i {
+    /* font-size: 7vw; */
+    line-height: inherit;
+    font-size: min(7vw, 27px);
+}
+.margenTexto {
+    margin-top: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-size: 1rem;
+}
+.btn {
+    background-color: var(--uno);
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    /* font-size: 20px; */
+    font-family: 'Raleway', sans-serif;
+    line-height: 3rem;
+    /* padding: 0 52px; */
+    height: 3rem;
+    width: 100%;
+    font-size: min(3vw, 20px);
+}
+
+.margen {
+    margin-top: 10rem;
+     margin-left: 0rem; 
+     margin-right: 0rem; 
+}
+h1 {
+    font-family: "Raleway";
+    font-weight: 900;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    line-height: 1em;
+    /* font-size: 6rem!important; */
+    font-size: min(10vw, 84px)!important;
+    /* background-color: white; */
+}
+
+body
+{
+    margin: 0;
+    width: 103%;
+}
+
+.rowContacto {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 20rem;
+}
+
+
+  }
+
+
+  .navPosicionuno
+  {
+    transform: translateX(-105%)!important;
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
