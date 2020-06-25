@@ -3,8 +3,21 @@ const nodemailer=require('nodemailer')
 
 require('dotenv').config()
 
+const express=require('express');
+const app=express()
 
-const{SENDER_EMAIL,SENDER_PASSWORD}=process.env;
+app.get('/',(req,res)=>
+{
+    console.log("paso por aca");
+    
+
+    res.send("Hello world")
+})
+
+exports.widgets = functions.https.onRequest(app);
+
+
+//const{SENDER_EMAIL,SENDER_PASSWORD}=process.env;
 /*
 exports.helloWorld = functions.https.onRequest((request, response) => {
           response.send("Hello from Firebase!");
@@ -39,7 +52,7 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
      });
 
 */
-
+/*
 exports.enviarCorreo=functions.firestore.document('prueba/').onCreate((snap,ctx)=>
 {
 
@@ -74,7 +87,7 @@ exports.enviarCorreo=functions.firestore.document('prueba/').onCreate((snap,ctx)
 
 
 })
-
+*/
 
 
 

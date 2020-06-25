@@ -1,6 +1,8 @@
 import React ,{useState} from 'react'
 import {TextInput,Button,Icon} from 'react-materialize'
 import Swal from 'sweetalert2'
+
+import clienteAxios from '../config/axios'
 function Contacto(props)
 {
 
@@ -10,6 +12,23 @@ const [contacto,guardarContacto]=useState({});
 
 
 
+
+const prueba=async e=>
+{
+    console.log("lo aprete");
+    
+    e.preventDefault();
+    try {
+        
+        const respuesta =await clienteAxios.get('/')
+
+
+}catch(error){
+console.log(error);
+
+}
+
+}
 
 const actualizarDatos=e=>
 {
