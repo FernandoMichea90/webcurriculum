@@ -22,6 +22,10 @@ function Piedepagina(params) {
   <p className="grey-text text-lighten-4 footParrafo">
 
       <ul>
+      <li>
+        <img height="40" src={require('../redes sociales/github.png')}></img>
+
+        </li>
         <li>
           <img height="40" src={require('../redes sociales/insta.png')}></img>
         </li>
@@ -33,10 +37,7 @@ function Piedepagina(params) {
         <img height="40" src={require('../redes sociales/link.png')}></img>
 
         </li>
-        <li>
-        <img height="40" src={require('../redes sociales/github.png')}></img>
-
-        </li>
+        
         
       </ul>
 

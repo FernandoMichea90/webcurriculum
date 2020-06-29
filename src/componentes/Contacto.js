@@ -51,6 +51,12 @@ const mandarCorreo=async e=>
         
     } catch (error) {
         
+        Swal.fire(
+            'Error!',
+            'Correo no enviado',
+            'success'
+    
+        )
         console.log(error);
         
     }
