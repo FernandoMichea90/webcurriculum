@@ -1,55 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {SideNav,Button,Icon,SideNavItem}from 'react-materialize'
+import M from "materialize-css/dist/js/materialize.min.js";
 
 function Barralateral() {
+
+
+
+  useEffect(()=>
+  {
+
+    var sidenav = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(sidenav, {});
+
+
+
+  },[])
     
     return(
-        <div>
-  <style>
-    {`
-            #root > div > div {
-              z-index: 99999 !important;
-            }
-          `}
-  </style>
-  <SideNav
-    id="SideNav-10"
-    options={{
-      draggable: true
-    }}
-    trigger={<Button node="button">SIDE NAV DEMO</Button>}
-  >
-    <SideNavItem
-      user={{
-        background: 'https://placeimg.com/640/480/tech',
-        email: 'jdandturk@gmail.com',
-        image: 'static/media/react-materialize-logo.824c6ea3.svg',
-        name: 'John Doe'
-      }}
-      userView
-    />
-    <SideNavItem
-      href="#!icon"
-      icon={<Icon>cloud</Icon>}
-    >
-      First Link With Icon
-    </SideNavItem>
-    <SideNavItem href="#!second">
-      Second Link
-    </SideNavItem>
-    <SideNavItem divider />
-    <SideNavItem subheader>
-      Subheader
-    </SideNavItem>
-    <SideNavItem
-      href="#!third"
-      waves
-    >
-      Third Link With Waves
-    </SideNavItem>
-  </SideNav>
-</div>
-
+     < ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg"/>
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"/></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+          
     )
 }
 

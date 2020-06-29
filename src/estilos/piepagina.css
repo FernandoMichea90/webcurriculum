@@ -1,0 +1,15 @@
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color:#2e2e2e;
+    margin:20vh 0 0 0;
+    font-family: "Raleway"
+    ;
+    
+}
+
+.footParrafo li
+{
+    float: left;
+    margin: 0 5px 0 5px;
+}

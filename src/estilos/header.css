@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root
+{
+
+    --uno:#eb5848;
+    --dos:#FF2C19;
+    --tres:white;
+    --cuatro:#EDFF87;
+    --cinco:#2e2e2e;
+}
+
+/* estilo navbar */
+
+.navbarEstilos{
+
+background-color:var(--uno) ;
+}
+
+.colorTransparente
+{
+   
+    background-color:whitesmoke ;
+
+}
+
+.colorTransparente
+{
+    background-color: rgba(0,0,0, 0.0);
+    -webkit-box-shadow: none;
+    box-shadow:none;
+
+}
+
+.colorTransparente a
+{
+   color: var(--cinco);
+
+}
+
+#nave a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.brand-logo
+{
+    font-size: 2em!important;
+}
+
+.navbar-fixed {
+    position: absolute;
+}
+
+/*estilos parallaz*/
+
+.parallax-container {
+    height:800px ;
+  }
+
+  .imagenperfil{
+    width: 28vw;
+    border-radius: 35px;
+  }
+
+
+  .positionParallaxDescripcion
+  {
+    position: absolute;
+    top: 135px;
+    width: 100vw;
+  }
+
+  .padreParallaxDescripcion{
+   
+    padding: 0 1rem;
+    margin: 0 0 0 0;
+  }
+
+
+  .padreParallaxFoto{
+   
+    margin: 20vh 0 0 0;
+    
+  }
+
+
+  @media (min-width:1400px)  and (max-width: 3000px) {
+
+    .padreParallaxFoto{
+   
+      margin: 0vh 0 0 0;
+      
+    }
+
+
+  }
+
+
+  .titulomovil
+  {
+     margin: 20vh 0 3vh 0!important ;
+     font-family: "Raleway";
+     font-weight: 900;
+     color: var(--cinco);
+     font-size: 52px;
+  }
+
+  .textoUno {
+    color: var(--cinco);
+    font-family: 'Raleway';
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+
+  @media (min-width:523px)  and (max-width: 992px) {
+
+    /*min-width: 400px*/
+    .padreParallaxFoto{
+   
+      margin: 0 0 0 20vw;
+      width:312px
+    }
+    .titulomovil
+    {
+       margin: 0vh 0 0vh 0!important 
+    }
+
+  }
+
+  @media (min-width: 424px)   and (max-width: 523px) {
+
+    /*min-width: 400px*/
+    .padreParallaxFoto{
+   
+      margin: 0 0 0 5vw;
+      width:312px
+    }
+    .titulomovil
+    {
+       margin: 0vh 0 0vh 0!important 
+    }
+
+  }
+
+  @media screen  and (max-width: 424px) {
+
+    /*min-width: 400px*/
+    .padreParallaxFoto{
+   
+      
+      margin: 0 0 0 10vw;
+    width: 56vw;
+    }
+
+    .titulomovil
+ {
+    margin: 0vh 0 0vh 0!important 
+ }
+
+  }
+
+  /*
+  para la parte m 
+
+  img 0 0 0 20vw
+  tamaño 312px
+  
+  .padreParallaxFoto{
+   
+    margin: 0 0 0 20vw;
+  }
+  
+  */

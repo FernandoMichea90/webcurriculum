@@ -1,28 +1,42 @@
 import React from 'react'
 import {Parallax} from 'react-materialize'
+import imgEscritorio from '../imagenes/imagenes/escritorio.jpg'
+import imgFotoPerfil  from '../imagenes/imagenes/fotoperfil.jpg'
+import pdf from '../curriculum/test.pdf'
 function ParallaxImg() {
 
     return(
-        <div>
+  <div>
   <Parallax
-    image={<img alt="" src="https://placeimg.com/500/600/tech"/>}
+    image={<img alt="" src={imgEscritorio}/>}
     options={{
       responsiveThreshold: 0
     }}
   />
-  <div className="section white">
-    <div className="row container">
-      <h2 className="header">
-        Parallax
-      </h2>
-      <p className="grey-text text-darken-3 lighten-3">
-        Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.
-      </p>
-    </div>
-  </div>
- 
-</div>
+  <div className="positionParallaxDescripcion">
+  <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l6  white-text">
+          <img class="imagenperfil padreParallaxFoto" src={imgFotoPerfil} />
+          
 
+        </div>
+        <div class="col s12 m12 l6 black-text padreParallaxDescripcion txtCentro">
+          <div>
+          <h2 class="titulomovil">Fernando Michea</h2>
+          <p class="textoUno">Soy un apasionado del mundo de la programacion, que busca a trav&eacute;s del
+             desarrollo web, entregarte el mejor servicio a ti y a tu empresa</p>
+          <a href={pdf} target="_blank" title="prueba"  class="btn-large botonEstilo"><i class="material-icons left">get_app</i>CURRICULUM VITAE</a>
+          </div>
+        </div>
+      
+        </div>
+        </div>
+  </div>
+  </div>
+
+
+  
     )
     
 }

@@ -8,6 +8,7 @@ import 'materialize-css';
 import ImgIcon from './componentes/ImagenIcono'
 import Tarjeta from './componentes/Tarjeta'
 import Contacto from './componentes/Contacto'
+import './estilos/principal.css'
 
 
 function App() {
@@ -23,27 +24,28 @@ function App() {
     <Header></Header>
     <Barralateral></Barralateral>
     <ParalaxImg></ParalaxImg>
+    
 
     <div className="container">
     <div class="row">
      
     </div>
     <div class="row">
-          <div class="col s12"><p>Habilidades</p></div>
-          <div class="col s12 m4 l4"><p><ImgIcon></ImgIcon></p></div>
-          <div class="col s12 m4 l4"><p><ImgIcon></ImgIcon></p></div>
-          <div class="col s12 m4 l4"><p><ImgIcon></ImgIcon></p></div>
+          <div class="col s12 txtCentro titulos"><p>Habilidades</p></div>
+          <div class="col s12 m4 l4"><p><ImgIcon  imagen="css"></ImgIcon></p></div>
+          <div class="col s12 m4 l4"><p><ImgIcon  imagen="java"></ImgIcon></p></div>
+          <div class="col s12 m4 l4"><p><ImgIcon  imagen="js"></ImgIcon></p></div>
         </div>
 
         <div class="row">
-          <div class="col s12 m4 l4"><p><ImgIcon></ImgIcon></p></div>
-          <div class="col s12 m4 l4"><p><ImgIcon></ImgIcon></p></div>
-          <div class="col s12 m4 l4"><p><ImgIcon></ImgIcon></p></div>
+          <div class="col s12 m4 l4"><p><ImgIcon  imagen="materialize"></ImgIcon></p></div>
+          <div class="col s12 m4 l4"><p><ImgIcon  imagen="mysql"></ImgIcon></p></div>
+          <div class="col s12 m4 l4"><p><ImgIcon  imagen="react"></ImgIcon></p></div>
         </div>   
 
 
-        <div class="row">
-          <div class="col s12"><p>Portafolio</p></div>
+        <div class="row txtCentro">
+          <div class="col s12 titulos"><p>Portafolio</p></div>
           <Tarjeta></Tarjeta>
           <Tarjeta></Tarjeta>
           <Tarjeta></Tarjeta>
@@ -53,6 +55,8 @@ function App() {
 
         <Contacto></Contacto>
 
+        
+
 
     </div>
 
@@ -61,15 +65,9 @@ function App() {
 
 
     <div class="fixed-action-btn">
-  <a class="btn-floating btn-large red">
-    <i class="large material-icons">mode_edit</i>
-  </a>
-  <ul>
-    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-  </ul>
+        <a class="btn-floating btn-large green"  href='https://api.whatsapp.com/send?phone=56976226068' target="_blank">
+          <i class="large fab fa-whatsapp"></i>
+        </a>        
 </div>
       
 

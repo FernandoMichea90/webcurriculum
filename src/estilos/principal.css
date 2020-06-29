@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+
+.txtCentro
+{
+     text-align: center;
+    
+}
+
+.titulos {
+     font-family: "Raleway";
+     font-weight: 900;
+     color: var(--cinco);
+     font-size: 52px;
+     margin: 10vh 0 10vh 0 
+ }
+ 
+
+
+ /*Boton*/
+
+ .botonEstilo {
+     font-weight: 600;
+     letter-spacing: 0.012em;
+     font-family: 'Raleway';
+     background-color: var(--uno);
+ }
+ .botonEstilo:hover ,.botonEstilo:focus {
+     font-weight: 600;
+     letter-spacing: 0.012em;
+     font-family: 'Raleway';
+     background-color: black;
+ }
+ 
+ .botonFlotante
+ {
+    position: fixed;
+    top: 90%;
+    right: 8%;
+}
+ 
