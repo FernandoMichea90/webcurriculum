@@ -22,10 +22,10 @@ function Header() {
     
     return(
 
-      <div class="navbar-fixed">
+      <div id="principal" class="navbar-fixed">
     <nav id="nave" class="colorTransparente">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">FM</a>
+        <a href="#principal" class="brand-logo">FM</a>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">

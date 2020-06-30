@@ -10,7 +10,6 @@ import Tarjeta from './componentes/Tarjeta'
 import Contacto from './componentes/Contacto'
 import './estilos/principal.css'
 
-
 function App() {
 
 
@@ -30,7 +29,7 @@ function App() {
     <div class="row">
      
     </div>
-    <div class="row">
+    <div id="habilidades" class="row">
           <div class="col s12 txtCentro titulos"><p>Habilidades</p></div>
           <div class="col s12 m4 l4"><p><ImgIcon  imagen="css"></ImgIcon></p></div>
           <div class="col s12 m4 l4"><p><ImgIcon  imagen="java"></ImgIcon></p></div>
@@ -44,7 +43,7 @@ function App() {
         </div>   
 
 
-        <div class="row txtCentro">
+        <div id="portafolio" class="row txtCentro">
           <div class="col s12 titulos"><p>Portafolio</p></div>
           <Tarjeta></Tarjeta>
           <Tarjeta></Tarjeta>
@@ -53,7 +52,7 @@ function App() {
 
         </div>
 
-        <Contacto></Contacto>
+        <Contacto ></Contacto>
 
         
 

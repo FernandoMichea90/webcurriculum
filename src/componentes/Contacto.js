@@ -73,7 +73,7 @@ const mandarCorreo=async e=>
 
 return (
 
-    <div className="container">
+    <div id="contacto" className="container">
     <div className="row">
 
 <form onSubmit={mandarCorreo}>
